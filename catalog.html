@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body class="body">
+
+    <div class="container">
+
+      <header class="page-header">
+
+        <nav class="main-nav">
+
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item1 site-list__item--active">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item2"><a href="#">Фото и видео</a></li>
+              <li class="site-list__item site-list__item3"><a href="#">Карта штата</a></li>
+              <li class="site-list__item site-list__item4 site-list__item--strips"><a href="catalog.html">Гостиницы</a></li>
+              <li class="site-list__item site-list__item5 site-list__item-down">
+                <a href="index.html">
+                    <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип туристического агенства «Седона»">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </header>
+
+      <main class="page-main">
+
+        <h1 class="visually-hidden">Страница для поиска гостиницы</h1>
+
+        <section class="filters">
+          <div class="ticks">
+            <div class="ticks__infrastructure">
+              <b></b>
+
+              <fieldset class="checkbox checkbox--borders">
+                <legend class="checkbox__title">инфраструктура:</legend>
+                <div class="checkbox__wrap-wrap">
+                  <div class="checkbox__wrap">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="check-one" id="one" checked="">
+                    <label class="checkbox__label checkbox--quadrate checkbox__label1 checkbox--quadrate1" for="one">бассейн</label>
+                  </div>
+                  <div class="checkbox__wrap">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="check-two" id="two" checked="">
+                    <label class="checkbox__label checkbox--quadrate checkbox__label2 checkbox--quadrate2" for="two">парковка</label>
+                  </div>
+                  <div class="checkbox__wrap">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="check-three" id="three" checked="">
+                    <label class="checkbox__label checkbox--quadrate checkbox__label3 checkbox--quadrate3" for="three">wi-fi</label>
+                  </div>
+                </div>
+              </fieldset>
+
+            </div>
+            <div class="ticks__type">
+              <fieldset class="checkbox checkbox--borders">
+                <legend class="checkbox__title">тип жилья:</legend>
+                <div class="checkbox__wrap-wrap">
+                  <div class="checkbox__wrap">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="check-one" id="four" checked="">
+                    <label class="checkbox__label checkbox--quadrate checkbox__label1 checkbox--quadrate1" for="four">бассейн</label>
+                  </div>
+                  <div class="checkbox__wrap">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="check-two" id="five" checked="">
+                    <label class="checkbox__label checkbox--quadrate checkbox__label2 checkbox--quadrate2" for="five">парковка</label>
+                  </div>
+                  <div class="checkbox__wrap">
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="check-three" id="six" checked="">
+                    <label class="checkbox__label checkbox--quadrate checkbox__label3 checkbox--quadrate3" for="six">wi-fi</label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="price">
+
+          </div>
+        </section>
+        
+        <section class="results">
+          
+          <ul class="found">
+            <li class="found__name">найдено</li>
+            <li class="found__number">3</li>
+            <li class="found__sort">сортировка</li>
+            <li class="found__price"><a href="">по цене</a></li>
+            <li class="found__type"><a href="">по типу</a></li>
+            <li class="found__type"><a href="">по рейтингу</a></li>
+          </ul>
+      
+          <ul class="hotels__list">
+            <li class="hotels__item">
+              <img class="hotel__item-picture-amara" src="img/" width="280" height="280" alt="Фотография отеля Амара">
+
+              <div class="hotel__item-middle-part">
+                <b class="hotel-name">amara resort & spa</b>
+                <div class="wrapper">
+                  <div class="hotel-type">гостиница</div>
+                  <div class="hotel-price">от 4000 Р.</div>
+                </div>
+                <div class="wrapper-button">  
+                  <div class="hotel-details button">подробнее</div>
+                  <div class="hotel-book button">забронировать</div>
+                </div> 
+              </div>
+
+              <div class="rating">
+                <div class="rating__stars"></div>
+                <div class="rating__numbers">рейтинг:8.5</div>
+              </div>
+            </li>
+
+            <li class="hotels__item">
+              <img class="hotel__item-picture-amara" src="img/" width="280" height="280" alt="Фотография отеля Десерт">
+
+              <div class="hotel__item-middle-part">
+                <b class="hotel-name">desert quail inn</b>
+                <div class="wrapper">
+                  <div class="hotel-type">мотель</div>
+                  <div class="hotel-price">от 3000 Р.</div>
+                </div>
+                <div class="wrapper-button">  
+                  <div class="hotel-details button">подробнее</div>
+                  <div class="hotel-book button">забронировать</div>
+                </div> 
+              </div>
+
+              <div class="rating">
+                <div class="rating__stars"></div>
+                <div class="rating__numbers">рейтинг:8.9</div>
+              </div>
+            </li>
+
+            <li class="hotels__item">
+              <img class="hotel__item-picture-amara" src="img/" width="280" height="280" alt="Фотография отеля Виллас">
+
+              <div class="hotel__item-middle-part">
+                <b class="hotel-name">villas at poco diablo</b>
+                <div class="wrapper">
+                  <div class="hotel-type">аппартаменты</div>
+                  <div class="hotel-price">от 2000 Р.</div>
+                </div>
+                <div class="wrapper-button">  
+                  <div class="hotel-details button">подробнее</div>
+                  <div class="hotel-book button">забронировать</div>
+                </div> 
+              </div>
+
+              <div class="rating">
+                <div class="rating__stars"></div>
+                <div class="rating__numbers">рейтинг:9.2</div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </main>
+
+      <footer class="footer">
+
+        <div class="footer__social social">
+          <b class="footer__title">#visitsedona</b> 
+          <a href="tel:74956660166">+7 (495) 666-01-66</a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/sedona"><span class="visually-hidden">Мы в Твиттере</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/sedona"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/sedona"><span class="visually-hidden">Мы в Ютубе</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__copyright copyright">
+          <b class="copyright__text">website by</b>
+          <a class="copyright__link copyright__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </div>
+
+      </footer>
+    </div>
+
+  </body>
+</html>

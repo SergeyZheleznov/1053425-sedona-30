@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
@@ -19,7 +18,6 @@
         <nav class="main-nav">
 
           <div class="main-nav__wrapper">
-            <button class="main-nav__button" type="button"><span class="visually-hidden">Кнопка меню</span></button>
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item1 site-list__item--active">
                 <a href="index.html">Главная</a>
@@ -29,11 +27,7 @@
               <li class="site-list__item site-list__item4 site-list__item--strips"><a href="catalog.html">Гостиницы</a></li>
               <li class="site-list__item site-list__item5 site-list__item-down">
                 <a href="index.html">
-                  <picture>
-                    <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
-                    <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
                     <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип туристического агенства «Седона»">
-                  </picture>
                 </a>
               </li>
             </ul>
@@ -57,35 +51,28 @@
           </div>
 
           <ol class="reasons-list">
-            <li class="realtown">
+            <li class="reason picture">
               <div class="realtown__position">
                 <div class="realtown__wrap realtown__wrap--triangle">
                   <h3 class="realtown__title">Настоящий городок</h3>
                   <span class="realtown__number">– №1 –</span>
                   <p class="realtown__recomendation">Седона не аттрацион для туристов, <br> там течёт своя жизнь</p>
                 </div>
-                <span class="realtown__picture">
-                  <picture>
-                    <source media="(min-width:1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg 2x">
-                    <source media="(min-width:768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x">
-                    <img class="realtown__picture" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="фотография городка «Седона»">
-                  </picture>
-                </span>
+                <div class="realtown__picture">
+                    <img class="realtown__picture" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="фотография городка «Седона»">
+                </div>
                 <ul class="advantages">
-                  <li class="advantages__home advantages__home--home">
+                  <li class="advantage advantage__plus">
                     <b class="advantages__title">Жильe</b>
                     <p class="advantages__description">Рекомендуем пожить в <br> настоящем мотеле, все как в <br>кино!</p>
                   </li>
-                  <li class="advantages__souvenires advantages__souvenires--souvenires">
+                  <li class="advantage advantage__plus">
                     <b class="advantages__title">Сувениры</b>
                     <div class="advantages__description1">
-                      <p class="advantages__description1-text1">Не только китайского,</p>
-                      <p class="advantages__description1-text2">но и </p>
-                      <p class="advantages__description1-text3">местного </p>
-                      <p class="advantages__description1-text4">производства</p>
+                      <p class="advantages__description1-text1">Не только китайского, но и местного производства</p>
                     </div>
                   </li>
-                  <li class="advantages__meal advantages__meal--meal">
+                  <li class="advantage advantage__plus">
                     <b class="advantages__title">Еда</b>
                     <p class="advantages__description">Всегда заказывайте <br>фирменный бургер, вы не <br>разочаруетесь</p>
                   </li>
@@ -93,7 +80,7 @@
               </div>
             </li>
 
-            <li class="bridge">
+            <li class="reason picture">
               <div class="bridge__wrap">
                 <div class="bridge__title">
                   <p class="bridge__text">Там&nbsp;есть мост&nbsp;дьявола</p>
@@ -101,15 +88,11 @@
                 <span class="bridge__number">– №2 –</span>
                 <p class="bridge__recomendation">Да, по нему можно пройти! Если вы <br>осмелитесь, конечно</p>
               </div>
-              <span class="bridge__picture">
-                <picture>
-                  <source media="(min-width:1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg 2x">
-                  <source media="(min-width:768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x">
-                  <img class="bridge__picture1" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фотография моста">
-                </picture>
-              </span>
+              <div class="bridge__picture">
+                  <img class="bridge__picture1" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фотография моста">
+              </div>
             </li>
-            <li class="square places">
+            <li class="reason">
               <div class="places__wrap">
                 <h3 class="places__title">Небольшая площадь</h3>
                 <span class="places__number">– №3 –</span>
@@ -117,7 +100,7 @@
               </div>
             </li>
 
-            <li class="road places">
+            <li class="reason">
               <div class="places__wrap">
                 <h3 class="places__title">Красивая дорога</h3>
                 <span class="places__number">– №4 –</span>
@@ -125,7 +108,7 @@
               </div>
             </li>
 
-            <li class="tourists places">
+            <li class="reason">
               <div class="places__wrap">
                 <h3 class="places__title">Мало туристов</h3>
                 <span class="places__number">– №5 –</span>
@@ -157,7 +140,8 @@
       <footer class="footer">
 
         <div class="footer__social social">
-          <b class="footer__title">#visitsedona <br> тел:+7(495) 666-01-66</b>
+          <b class="footer__title">#visitsedona</b> 
+          <a href="tel:74956660166">+7 (495) 666-01-66</a>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com/sedona"><span class="visually-hidden">Мы в Твиттере</span></a>
@@ -174,7 +158,6 @@
         <div class="footer__copyright copyright">
           <b class="copyright__text">website by</b>
           <a class="copyright__link copyright__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive"></a>
-          <b class="copyright__textacad">html <br> academy</b>
         </div>
 
       </footer>
