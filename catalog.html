@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="format-detection" content="telephone=no">
+    
+    <link rel="icon" href="32.ico">
+    <link rel="icon" href="152.ico">
+    <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/icons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
     <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
@@ -20,7 +27,7 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item1 site-list__item--active">
-                <a href="index.html">Главная</a>
+                <a href="index.html">Информация</a>
               </li>
               <li class="site-list__item site-list__item2"><a href="#">Фото и видео</a></li>
               <li class="site-list__item site-list__item3"><a href="#">Карта штата</a></li>
@@ -31,7 +38,7 @@
 
         <div class="logo">
           <a href="index.html">
-            <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип туристического агенства «Седона»">
+            <img class="main-nav__logo-image" src="img/logo.svg" width="138" height="70" alt="Логотип туристического агенства «Седона»">
           </a>
         </div>
 
@@ -41,7 +48,7 @@
 
         <h1 class="visually-hidden">Страница для поиска гостиницы</h1>
 
-        <section class="filters">
+        <section class="filters filters--back">
           <div class="ticks">
             <div class="ticks__infrastructure">
 
@@ -92,17 +99,34 @@
         
         <section class="results">
           
-          <p class="find">найдено: 3</p>
-          <div class="sort">сортировка:</div>
-          <ul class="found">
-            <li class="found__price"><a href="">по цене</a></li>
-            <li class="found__type"><a href="">по типу</a></li>
-            <li class="found__type"><a href="">по рейтингу</a></li>
-          </ul>
-      
+          <div class="sorting">
+            <p class="sorting__find">найдено: 3</p>
+            <div class="sorting__text">сортировка:</div>
+            <ul class="center">
+              <li class="center__price"><a href="">по цене</a></li>
+              <li class="center__type"><a href="">по типу</a></li>
+              <li class="center__type"><a href="">по рейтингу</a></li>
+            </ul>
+            <ul class="right">
+              <ul class="right-sorting">
+                <li class="sort-current"><a class="arrow" href="#"><span class="visually-hidden">Стрелка вниз</span>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                  <polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
+                  </svg></a>
+                </li>
+                <li><a class="arrow" href="#"><span class="visually-hidden">Стрелка вверх</span>
+                  <svg version="1.1" id="Layer_12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                  <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+                  </svg></a> 
+                </li>
+            </ul>
+          </div>
+
           <ul class="hotels__list">
             <li class="hotels__item">
-              <img class="hotel__item-picture-amara" src="img/" width="280" height="280" alt="Фотография отеля Амара">
+              <img class="hotel__item-picture-amara" src="img/amara.jpg" width="135" height="90" alt="Фотография отеля Амара">
 
               <div class="hotel__item-middle-part">
                 <h2 class="hotel-name"><a href="#">amara resort & spa</a></h2>
@@ -123,7 +147,7 @@
             </li>
 
             <li class="hotels__item">
-              <img class="hotel__item-picture-amara" src="img/" width="280" height="280" alt="Фотография отеля Десерт">
+              <img class="hotel__item-picture-amara" src="img/desert.jpg" width="135" height="90" alt="Фотография отеля Десерт">
 
               <div class="hotel__item-middle-part">
                 <h2 class="hotel-name"><a href="#">desert quail inn</a></b>
@@ -144,7 +168,7 @@
             </li>
 
             <li class="hotels__item">
-              <img class="hotel__item-picture-amara" src="img/" width="280" height="280" alt="Фотография отеля Виллас">
+              <img class="hotel__item-picture-amara" src="img/villas.jpg" width="135" height="90" alt="Фотография отеля Виллас">
 
               <div class="hotel__item-middle-part">
                 <h2 class="hotel-name"><a href="#">villas at poco diablo</a></b>
@@ -170,9 +194,12 @@
 
       <footer class="footer">
 
-        <div class="footer__social social">
+        <div class="footer__contact">
           <b class="footer__title">#visitsedona</b> 
-          <a href="tel:74956660166">тел:+7 (495)666-01-66</a>
+          <span class="footer__tel"><a href="tel:74956660166">тел: +7(495) 666-01-66</a></span>
+        </div>
+        
+        <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com/sedona"><span class="visually-hidden">Мы в Твиттере</span></a>
