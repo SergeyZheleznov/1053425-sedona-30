@@ -49,9 +49,9 @@
         <section class="reasons">
 
           <h2 class="visually-hidden">Причины для посещения городка Седона</h2>
-          <div class="reasons__position">
+          <div class="reasons__position reasons__position--triangle">
             <div class="reasons__index1 reasons--sedona">
-              <img class="reasons__index" src="img/welcome.png" width="458" height="351" alt="welcome">
+              <img class="reasons__index" src="img/welcome.svg" width="458" height="351" alt="welcome">
             </div>
             <p class="reasons__number-zero">Седона – небольшой городок в Аризоне, <br> заслуживающий большего!</p>
             <p class="reasons__number-one">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -60,7 +60,7 @@
           <ol class="reasons__list">
             <li class="reasons__item">
               <div class="reasons__item-position">
-                <div class="reasons__item-wrap reasons__item-blue realtown__wrap--triangle">
+                <div class="reasons__item-wrap reasons__item-blue">
                   <h3 class="reasons__item-title">Настоящий <br> городок</h3>
                   <span class="reasons__item-number">– №1 –</span>
                   <p class="reasons__item-recomendation">Седона не аттрацион для туристов, там<br> течёт своя жизнь</p>
@@ -71,15 +71,15 @@
                 <ul class="advantages">
                   <li class="advantages__item advantages__item--house">
                     <b class="advantages__item-title">Жильe</b>
-                    <p class="advantages__item-description">Рекомендуем пожить в  настоящем <br>мотеле, все как в кино!</p>
+                    <p class="advantages__item-description brown">Рекомендуем пожить в настоящем <br>мотеле, все как в кино!</p>
                   </li>
                   <li class="advantages__item advantages__item--meal">
                     <b class="advantages__item-title">Еда</b>
-                    <p class="advantages__item-description">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь</p>
+                    <p class="advantages__item-description brown">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь</p>
                   </li> 
                   <li class="advantages__item advantages__item--suv">
                     <b class="advantages__item-title">Сувениры</b>
-                    <p class="advantages__item-description">Не только китайского, но и местного<br> производства</p>
+                    <p class="advantages__item-description brown">Не только китайского, но и местного<br> производства</p>
                   </li>
 
                 </ul>
@@ -94,32 +94,32 @@
                 <div class="reasons__item-title">
                   <p class="reasons__item-text">Там&nbsp;есть<br> мост&nbsp;дьявола</p>
                 </div>
-                <span class="reasons__item-number">– №2 –</span>
-                <p class="reasons__item-recomendation">Да, по нему можно пройти! Если вы <br>осмелитесь, конечно</p>
+                <span class="reasons__item-number brown">– №2 –</span>
+                <p class="reasons__item-recomendation brown">Да, по нему можно пройти! Если вы <br>осмелитесь, конечно</p>
               </div>
             </li>
 
             <li class="reasons__item reasons__item-small">
               <div class="reasons__item-wrap">
                 <h3 class="reasons__item-title">Небольшая <br> площадь</h3>
-                <span class="reasons__item-number">– №3 –</span>
-                <p class="reasons__item-recomendation">Все достопримечательности <br> находятся очень близко</p>
+                <span class="reasons__item-number brown">– №3 –</span>
+                <p class="reasons__item-recomendation brown">Все достопримечательности <br> находятся очень близко</p>
               </div>
             </li>
 
             <li class="reasons__item reasons__item-small">
               <div class="reasons__item-wrap">
                 <h3 class="reasons__item-title">Красивая <br> дорога</h3>
-                <span class="reasons__item-number">– №4 –</span>
-                <p class="reasons__item-recomendation">Ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p>
+                <span class="reasons__item-number brown">– №4 –</span>
+                <p class="reasons__item-recomendation brown">Ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p>
               </div>
             </li>
 
             <li class="reasons__item reasons__item-small">
               <div class="reasons__item-wrap">
                 <h3 class="reasons__item-title">Мало <br> туристов</h3>
-                <span class="reasons__item-number">– №5 –</span>
-                <p class="reasons__item-recomendation">Большинство едет в Гранд Каньон<br> и толпится там</p>
+                <span class="reasons__item-number brown">– №5 –</span>
+                <p class="reasons__item-recomendation brown">Большинство едет в Гранд Каньон<br> и толпится там</p>
               </div>
             </li>
           </ol>
@@ -171,6 +171,40 @@
         </div>
 
       </footer>
+
+      <section class="module">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <form class="form-content" action="https://echo.htmlacademy.ru" method="POST">
+        
+          <fieldset class="customer costumer__borders">
+            <legend class="visually-hidden">Данные для поиска гостиницы</legend>
+            <div class="customer__wrap-wrap">
+              <div class="customer__day-in customer__day-in--calender">
+                <label class="customer__day-in-letter" for="customer__day-in-id">Дата заезда: </label>
+                <input class="customer__day-in-holder" type="text" name="customer__day-in" id="customer__day-in-id" placeholder="24 апреля 2017" required="">
+              </div>
+              <div class="customer__day-out">
+                <label class="customer__day-out-letter" for="customer__day-out-id">Дата выезда: </label>
+                <input class="customer__day-out-holder" type="text" name="customer__day-out" id="customer__day-out-id" placeholder="4 июля 2017" required="">
+              </div>
+              <div class="customer__wrap">
+                <div class="customer__adult customer__adult--plus-minus">
+                  <label class="customer__adult-letter" for="customer__adult-id">Взрослые:</label>
+                  <input class="customer__adult-holder" type="text" name="customer__adult" id="customer__adult-id" placeholder="2" required="">
+                </div>
+                <div class="customer__child customer__child--plus-minus">
+                  <label class="customer__child-letter" for="customer__child-id">Дети:</label>
+                  <input class="customer__child-holder" type="text" name="customer__child" id="customer__child-id" placeholder="0" required="">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="send-toggle">
+            <button class="button-form">Найти</button>
+          </div>
+        </form>
+      </section>
     </div>
 
   </body>

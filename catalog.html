@@ -77,15 +77,15 @@
                 <div class="checkbox__wrap-wrap">
                   <div class="checkbox__wrap">
                     <input class="checkbox__input visually-hidden" type="checkbox" name="check-one" id="four" checked="">
-                    <label class="checkbox__label checkbox--quadrate checkbox__label1 checkbox--quadrate1" for="four">бассейн</label>
+                    <label class="checkbox__label checkbox--quadrate checkbox__label1 checkbox--quadrate1" for="four">гостиница</label>
                   </div>
                   <div class="checkbox__wrap">
                     <input class="checkbox__input visually-hidden" type="checkbox" name="check-two" id="five" checked="">
-                    <label class="checkbox__label checkbox--quadrate checkbox__label2 checkbox--quadrate2" for="five">парковка</label>
+                    <label class="checkbox__label checkbox--quadrate checkbox__label2 checkbox--quadrate2" for="five">мотель</label>
                   </div>
                   <div class="checkbox__wrap">
                     <input class="checkbox__input visually-hidden" type="checkbox" name="check-three" id="six" checked="">
-                    <label class="checkbox__label checkbox--quadrate checkbox__label3 checkbox--quadrate3" for="six">wi-fi</label>
+                    <label class="checkbox__label checkbox--quadrate checkbox__label3 checkbox--quadrate3" for="six">апартаменты</label>
                   </div>
                 </div>
               </fieldset>
@@ -93,10 +93,27 @@
           </div>
 
           <div class="price">
+            <div class="name__filter-comp1">Стоимость в сутки (р):</div>
+            <div class="range-filter">
+              <div class="range-control">
+                <div class="price-controls price-controls--rectangle">
+                  <label class="min-price">от<input name="min-price"type="number" value="0"></label>
+                  <label class="max-price">до<input name="max-price"type="number" value="3000"></label>
+                </div>
+                <div class="scale">
+                  <div class="bar"></div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+              </div>
+            </div>
 
+            <div class="price-toggle">
+              <button class="price-button">Показать</button>
+            </div>
           </div>
         </section>
-        
+      
         <section class="results">
           
           <div class="sorting">
@@ -107,20 +124,21 @@
               <li class="center__type"><a href="">по типу</a></li>
               <li class="center__type"><a href="">по рейтингу</a></li>
             </ul>
-            <ul class="right">
-              <ul class="right-sorting">
-                <li class="sort-current"><a class="arrow" href="#"><span class="visually-hidden">Стрелка вниз</span>
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                  <polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
-                  </svg></a>
-                </li>
-                <li><a class="arrow" href="#"><span class="visually-hidden">Стрелка вверх</span>
-                  <svg version="1.1" id="Layer_12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                  <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
-                  </svg></a> 
-                </li>
+            <ul class="right-sorting">
+              
+              <li class="sort-current"><a class="arrow" href="#"><span class="visually-hidden">Стрелка вверх</span>
+                <svg version="1.1" id="Layer_12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                <polygon fill="#cacaca" points="5.5,0 0,10 11,10 "/>
+                </svg></a> 
+              </li>
+
+              <li class="sort-current"><a class="arrow" href="#"><span class="visually-hidden">Стрелка вниз</span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                <polyline fill="#81b2d3" points="5.5,10 0,0 11,0 "/>
+                </svg></a>
+              </li>
             </ul>
           </div>
 
@@ -129,20 +147,43 @@
               <img class="hotel__item-picture-amara" src="img/amara.jpg" width="135" height="90" alt="Фотография отеля Амара">
 
               <div class="hotel__item-middle-part">
-                <h2 class="hotel-name"><a href="#">amara resort & spa</a></h2>
+                <h2 class="hotel__name"><a href="#">amara resort & spa</a></h2>
                 <div class="hotel__criteria">
                   <span class="hotel__criteria-type">гостиница</span>
                   <span class="hotel__criteria-price">от 4000 Р.</span>
                 </div>
-                <div class="hotel-buttons">  
-                  <div class="hotel-details button"><a href="#">подробнее</a></div>
-                  <div class="hotel-book button"><a href="#">забронировать</a></div>
+                <div class="hotel__buttons">  
+                  <div class="hotel__details"><a href="#">подробнее</a></div>
+                  <div class="hotel__book"><a href="#">забронировать</a></div>
                 </div> 
               </div>
 
               <div class="rating">
-                <div class="rating__stars"></div>
-                <div class="rating__numbers">рейтинг:8.5</div>
+                <ul class="rating__list">
+                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                    </svg>
+                  </li>
+                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                    </svg>
+                  </li>
+                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                    </svg>
+                  </li>
+                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                    </svg>
+                  </li>                 
+                </ul>
+                <div class="rating__numbers">
+                  <p class="rating__text">рейтинг:8,5</p>
+                </div>
               </div>
             </li>
 
@@ -150,20 +191,38 @@
               <img class="hotel__item-picture-amara" src="img/desert.jpg" width="135" height="90" alt="Фотография отеля Десерт">
 
               <div class="hotel__item-middle-part">
-                <h2 class="hotel-name"><a href="#">desert quail inn</a></b>
+                <h2 class="hotel__name"><a href="#">desert quail inn</a></h2>
                 <div class="hotel__criteria">
                   <span class="hotel__criteria-type">мотель</span>
                   <span class="hotel__criteria-price">от 3000 Р.</span>
                 </div>
-                <div class="hotel-buttons">  
-                  <div class="hotel-details button"><a href="#">подробнее</a></div>
-                  <div class="hotel-book button"><a href="#">забронировать</a></div>
+                <div class="hotel__buttons">  
+                  <div class="hotel__details"><a href="#">подробнее</a></div>
+                  <div class="hotel__book"><a href="#">забронировать</a></div>
                 </div> 
               </div>
 
               <div class="rating">
-                <div class="rating__stars"></div>
-                <div class="rating__numbers">рейтинг:8.9</div>
+                <ul class="rating__list">
+                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                    </svg>
+                  </li>
+                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                    </svg>
+                  </li>
+                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                    </svg>
+                  </li>                 
+                </ul>
+                <div class="rating__numbers">
+                  <p class="rating__text">рейтинг:8,9</p>
+                </div>
               </div>
             </li>
 
@@ -171,25 +230,37 @@
               <img class="hotel__item-picture-amara" src="img/villas.jpg" width="135" height="90" alt="Фотография отеля Виллас">
 
               <div class="hotel__item-middle-part">
-                <h2 class="hotel-name"><a href="#">villas at poco diablo</a></b>
+                <h2 class="hotel__name"><a href="#">villas at poco diablo</a></h2>
                 <div class="hotel__criteria">
                   <span class="hotel__criteria-type">апартаменты</span>
                   <span class="hotel__criteria-price">от 2000 Р.</span>
                 </div>
-                <div class="hotel-buttons">  
-                  <div class="hotel-details button"><a href="#">подробнее</a></div>
-                  <div class="hotel-book button"><a href="#">забронировать</a></div>
+                <div class="hotel__buttons">  
+                  <div class="hotel__details"><a href="#">подробнее</a></div>
+                  <div class="hotel__book"><a href="#">забронировать</a></div>
                 </div> 
               </div>
 
               <div class="rating">
-                <div class="rating__stars"></div>
-                <div class="rating__numbers">рейтинг:9.2</div>
+                <ul class="rating__list">
+                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                    </svg>
+                  </li>
+                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                    </svg>
+                  </li>                 
+                </ul>
+                <div class="rating__numbers">
+                  <p class="rating__text">рейтинг:9,2</p>
+                </div>
               </div>
             </li>
           </ul>
         </section>
-
       </main>
 
       <footer class="footer">
