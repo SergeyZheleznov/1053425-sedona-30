@@ -932,8 +932,6 @@ input[type="checkbox"].visually-hidden {
   padding-top: 2px;
 
   color: #ffffff;
-
-  outline: 1px solid red;
 }
 
 .ticks__type {
@@ -961,8 +959,6 @@ input[type="checkbox"].visually-hidden {
   margin-left: 60px;
   margin-bottom: 30px;
   border: none;
-
-  outline: 1px solid rgb(2, 0, 128);
 }
 
 .check__title {
