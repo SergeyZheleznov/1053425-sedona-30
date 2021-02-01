@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="format-detection" content="telephone=no">
-    
-    <link rel="icon" href="32.ico">
-    <link rel="icon" href="152.ico">
-    <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/icons/180.png">
-    <link rel="manifest" href="manifest.webmanifest">
 
     <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/icons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="body">
@@ -26,12 +26,12 @@
 
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item1 site-list__item--active">
+              <li class="site-list__item site-list__item1">
                 <a href="index.html">Информация</a>
               </li>
               <li class="site-list__item site-list__item2"><a href="#">Фото и видео</a></li>
               <li class="site-list__item site-list__item3"><a href="#">Карта штата</a></li>
-              <li class="site-list__item site-list__item4 site-list__item--strips"><a href="catalog.html">Гостиницы</a></li>
+              <li class="site-list__item site-list__item4 site-list__item--strips  site-list__item--active"><a href="catalog.html">Гостиницы</a></li>
             </ul>
           </div>
         </nav>
@@ -50,44 +50,52 @@
 
         <section class="filters filters--back">
           <div class="ticks">
-            <div class="ticks__infrastructure">
 
-              <fieldset class="checkbox checkbox--borders">
-                <legend class="checkbox__title">инфраструктура:</legend>
-                <div class="checkbox__wrap-wrap">
-                  <div class="checkbox__wrap">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="check-one" id="one" checked="">
-                    <label class="checkbox__label checkbox--quadrate checkbox__label1 checkbox--quadrate1" for="one">бассейн</label>
-                  </div>
-                  <div class="checkbox__wrap">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="check-two" id="two" checked="">
-                    <label class="checkbox__label checkbox--quadrate checkbox__label2 checkbox--quadrate2" for="two">парковка</label>
-                  </div>
-                  <div class="checkbox__wrap">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="check-three" id="three" checked="">
-                    <label class="checkbox__label checkbox--quadrate checkbox__label3 checkbox--quadrate3" for="three">wi-fi</label>
-                  </div>
-                </div>
-              </fieldset>
+            <fieldset class="filter-checked">
+              <legend class="check__title">инфраструктура:</legend>
+  
+              <label class="check option">
+                <input class="check__input visually-hidden" type="checkbox" name="name__check" value="pool" checked>
+                <span class="check__box"></span>
+                Бассейн
+              </label>
 
-            </div>
+              <label class="check option">
+                <input class="check__input visually-hidden" type="checkbox" name="name__check" value="parking">
+                <span class="check__box"></span>
+                Парковка
+              </label>
+          
+              <label class="check option">
+                <input class="check__input visually-hidden" type="checkbox" name="name__check" value="wi-fi">
+                <span class="check__box"></span>
+                wi-fi
+              </label>             
+            
+            </fieldset>
             <div class="ticks__type">
-              <fieldset class="checkbox checkbox--borders">
-                <legend class="checkbox__title">тип жилья:</legend>
-                <div class="checkbox__wrap-wrap">
-                  <div class="checkbox__wrap">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="check-one" id="four" checked="">
-                    <label class="checkbox__label checkbox--quadrate checkbox__label1 checkbox--quadrate1" for="four">гостиница</label>
-                  </div>
-                  <div class="checkbox__wrap">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="check-two" id="five" checked="">
-                    <label class="checkbox__label checkbox--quadrate checkbox__label2 checkbox--quadrate2" for="five">мотель</label>
-                  </div>
-                  <div class="checkbox__wrap">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="check-three" id="six" checked="">
-                    <label class="checkbox__label checkbox--quadrate checkbox__label3 checkbox--quadrate3" for="six">апартаменты</label>
-                  </div>
-                </div>
+
+              <fieldset class="filter-checked">
+                <legend class="check__title">тип жилья:</legend>
+    
+                <label class="check option">
+                  <input class="check__input visually-hidden" type="checkbox" name="name__check" value="hotel" checked>
+                  <span class="check__box"></span>
+                  Гостиница
+                </label>
+  
+                <label class="check option">
+                  <input class="check__input visually-hidden" type="checkbox" name="name__check" value="motel" checked>
+                  <span class="check__box"></span>
+                  мотель
+                </label>
+            
+                <label class="check option">
+                  <input class="check__input visually-hidden" type="checkbox" name="name__check" value="apartment" checked>
+                  <span class="check__box"></span>
+                  апартаменты
+                </label>             
+              
               </fieldset>
             </div>
           </div>
@@ -101,6 +109,7 @@
                   <label class="max-price">до<input name="max-price"type="number" value="3000"></label>
                 </div>
                 <div class="scale">
+                  <div class="bar-grey"></div>
                   <div class="bar"></div>
                   <div class="toggle toggle-min"></div>
                   <div class="toggle toggle-max"></div>
@@ -120,9 +129,9 @@
             <p class="sorting__find">найдено: 3</p>
             <div class="sorting__text">сортировка:</div>
             <ul class="center">
-              <li class="center__price"><a href="">по цене</a></li>
-              <li class="center__type"><a href="">по типу</a></li>
-              <li class="center__type"><a href="">по рейтингу</a></li>
+              <li class="center__type center__active"><a href="#">по цене</a></li>
+              <li class="center__type"><a href="#">по типу</a></li>
+              <li class="center__type"><a href="#">по рейтингу</a></li>
             </ul>
             <ul class="right-sorting">
               

@@ -1,0 +1,16 @@
+/*файл для директивы*/
+@font-face {
+    font-family: "PT Sans";
+    font-weight: normal;
+    font-style: normal;
+    src: local("PT Sans"), url("..//fonts/ptsans.woff2") format("woff2"), url("..//fonts/ptsans.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans Bold";
+    font-weight: bold;
+    font-style: normal;
+    src: local("PT Sans Bold"), url("..//fonts/ptsansbold.woff2") format("woff2"), url("..//fonts/ptsansbold.woff") format("woff");
+    font-display: swap;
+}
