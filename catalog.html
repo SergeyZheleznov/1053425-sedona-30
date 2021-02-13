@@ -49,28 +49,31 @@
         <section class="filters filters--back">
           <div class="ticks">
 
-            <fieldset class="filter-checked">
-              <legend class="check__title">инфраструктура:</legend>
+            <div class="ticks__infra">
 
-              <label class="check option">
-                <input class="check__input visually-hidden" type="checkbox" name="name__check" value="pool" checked>
-                <span class="check__box"></span>
-                Бассейн
-              </label>
+              <fieldset class="filter-checked">
+                <legend class="check__title">инфраструктура:</legend>
 
-              <label class="check option">
-                <input class="check__input visually-hidden" type="checkbox" name="name__check" value="parking">
-                <span class="check__box"></span>
-                Парковка
-              </label>
+                <label class="check option">
+                  <input class="check__input visually-hidden" type="checkbox" name="name__check" value="pool" checked>
+                  <span class="check__box"></span>
+                  Бассейн
+                </label>
 
-              <label class="check option">
-                <input class="check__input visually-hidden" type="checkbox" name="name__check" value="wi-fi">
-                <span class="check__box"></span>
-                wi-fi
-              </label>
+                <label class="check option">
+                  <input class="check__input visually-hidden" type="checkbox" name="name__check" value="parking">
+                  <span class="check__box"></span>
+                  Парковка
+                </label>
 
-            </fieldset>
+                <label class="check option">
+                  <input class="check__input visually-hidden" type="checkbox" name="name__check" value="wi-fi">
+                  <span class="check__box"></span>
+                  wi-fi
+                </label>
+              </fieldset>
+
+            </div>
             <div class="ticks__type">
 
               <fieldset class="filter-checked">
@@ -98,27 +101,36 @@
             </div>
           </div>
 
-          <div class="price">
-            <div class="name__filter-comp1">Стоимость в сутки (р):</div>
-            <div class="range-filter">
-              <div class="range-control">
-                <div class="price-controls price-controls--rectangle">
-                  <label class="min-price">от<input name="min-price"type="number" value="0"></label>
-                  <label class="max-price">до<input name="max-price"type="number" value="3000"></label>
-                </div>
-                <div class="scale">
-                  <div class="bar-grey"></div>
-                  <div class="bar"></div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
-                </div>
-              </div>
-            </div>
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
+              <legend>Стоимость в сутки (Р):</legend>
+              <div class="range-filter">
 
-            <div class="price-toggle">
-              <button class="price-button">Показать</button>
-            </div>
+                <div class="prices-controls prices-controls--rectangle">
+                  <label class="min-price">
+                    от<input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до<input type="number" name="max-price" value="3000">
+                  </label>
+                </div>
+
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="width: 80%; margin-left:0%"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="left:0%"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left:80%"></div>
+                </div>
+
+              </div>
+             </fieldset>
+          </form>
+
+          <div class="price-toggle">
+            <button class="price-button">Показать</button>
           </div>
+
         </section>
 
         <section class="results">
@@ -143,7 +155,7 @@
               <li class="sort-current"><a class="arrow" href="#"><span class="visually-hidden">Стрелка вниз</span>
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                <polyline fill="#81b2d3" points="5.5,10 0,0 11,0 "/>
+                <polyline fill="#81b3d2" points="5.5,10 0,0 11,0 " class="polyline"/>
                 </svg></a>
               </li>
             </ul>
@@ -190,7 +202,7 @@
                   </li>
                 </ul>
                 <div class="rating__numbers">
-                  <p class="rating__text">рейтинг:8,5</p>
+                  <p class="rating__text">Рейтинг: 8,5</p>
                 </div>
               </div>
             </li>
@@ -230,7 +242,7 @@
                   </li>
                 </ul>
                 <div class="rating__numbers">
-                  <p class="rating__text">рейтинг:8,9</p>
+                  <p class="rating__text">Рейтинг: 8,9</p>
                 </div>
               </div>
             </li>
@@ -265,7 +277,7 @@
                   </li>
                 </ul>
                 <div class="rating__numbers">
-                  <p class="rating__text">рейтинг:9,2</p>
+                  <p class="rating__text">Рейтинг: 9,2</p>
                 </div>
               </div>
             </li>
