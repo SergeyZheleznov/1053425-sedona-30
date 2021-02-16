@@ -13,7 +13,7 @@
   font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
-  src: local("PT Sans"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  src: local("PT Sans bold"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-display: swap;
 }
 
@@ -726,10 +726,7 @@ input[type="checkbox"].visually-hidden {
 
 .customer__day-in-holder::placeholder {
   color: var(--basic-black);
-}
-
-.customer__day-in-holder::-moz-placeholder {
-  color: var(--basic-black);
+  opacity: 1;
 }
 
 .customer__day-in-holder:hover {
@@ -745,11 +742,12 @@ input[type="checkbox"].visually-hidden {
 .customer__day-in--calender {
   position: absolute;
   top: 10px;
-  left: 447px;
+  left: 442px;
   width: 22px;
   height: 23px;
   z-index: 1;
   fill: var(--middle-grey);
+  border: none;
 }
 
 .customer__day-in--calender:hover {
@@ -798,6 +796,7 @@ input[type="checkbox"].visually-hidden {
 
 .customer__day-out-holder::placeholder {
   color: var(--basic-black);
+  opacity: 1;
 }
 
 .customer__day-out-holder:hover {
@@ -813,12 +812,13 @@ input[type="checkbox"].visually-hidden {
 .customer__day-out--calender {
   position: absolute;
   top: 6px;
-  left: 447px;
+  left: 442px;
   width: 22px;
   height: 23px;
   z-index: 1;
 
   fill: var(--middle-grey);
+  border: none;
 }
 
 .customer__day-out--calender:hover {
@@ -853,12 +853,14 @@ input[type="checkbox"].visually-hidden {
 
 .customer__adult-minus {
   position: absolute;
-  top: 7px;
-  left: 145px;
-  width: 12px;
-  height: 3px;
+  top: 5px;
+  left: 137px;
+  width: 23px;
+  height: 23px;
   z-index: 1;
   fill: var(--middle-grey);
+  cursor: pointer;
+  border: none;
 }
 
 .customer__adult-minus:hover {
@@ -872,12 +874,14 @@ input[type="checkbox"].visually-hidden {
 
 .customer__adult-plus {
   position: absolute;
-  top: 12px;
-  left: 219px;
-  width: 12px;
-  height: 3px;
+  top: 10px;
+  left: 213px;
+  width: 23px;
+  height: 23px;
   z-index: 1;
   fill: var(--middle-grey);
+  cursor: pointer;
+  border: none;
 }
 
 .customer__adult-plus:hover {
@@ -917,6 +921,7 @@ input[type="checkbox"].visually-hidden {
 
 .customer__adult-holder::placeholder {
   color: var(--basic-black);
+  opacity: 1;
 }
 
 .customer__adult-holder:hover {
@@ -938,12 +943,14 @@ input[type="checkbox"].visually-hidden {
 
 .customer__child-minus {
   position: absolute;
-  top: 7px;
-  left: 130px;
-  width: 12px;
-  height: 3px;
+  top: 5px;
+  left: 122px;
+  width: 23px;
+  height: 23px;
   z-index: 1;
   fill: var(--middle-grey);
+  cursor: pointer;
+  border: none;
 }
 
 .customer__child-minus:hover {
@@ -957,12 +964,14 @@ input[type="checkbox"].visually-hidden {
 
 .customer__child-plus {
   position: absolute;
-  top: 12px;
-  left: 205px;
-  width: 12px;
-  height: 3px;
+  top: 9px;
+  left: 198px;
+  width: 23px;
+  height: 23px;
   z-index: 1;
   fill: var(--middle-grey);
+  cursor: pointer;
+  border: none;
 }
 
 .customer__child-plus:hover {
@@ -1001,6 +1010,7 @@ input[type="checkbox"].visually-hidden {
 
 .customer__child-holder::placeholder {
   color: var(--basic-black);
+  opacity: 1;
 }
 
 .customer__child-holder:hover {
@@ -1421,21 +1431,29 @@ input[type="checkbox"].visually-hidden {
   margin-left: 10px;
 }
 
-polygon:hover {
-  fill:#000000;
+.sort-current__up {
+  fill:#cacaca;
 }
 
-polyline:hover {
-  fill:#000000;
-}
-
-polygon:focus,
-polygon:active {
+.sort-current__down {
   fill:#81b3d2;
 }
 
-polyline:focus,
-polyline:active  {
+.sort-current__up:hover {
+  fill:#000000;
+}
+
+.sort-current__down:hover {
+  fill:#000000;
+}
+
+.sort-current__up:focus,
+.sort-current__up:active {
+  fill:#81b3d2;
+}
+
+.sort-current__down:focus,
+.sort-current__down:active  {
   fill:#81b3d2;
 }
 
