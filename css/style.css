@@ -391,10 +391,11 @@ input[type="checkbox"].visually-hidden {
   top: 52px;
   left: 167px;
   width: 77px;
-  height: 75px;
+  height: 85px;
   background-repeat: no-repeat;
   background-image: url("../img/icon-suv.svg");
 }
+
 /*Часть главной страницы с причиной № 2*/
 
 .bridge {
@@ -748,6 +749,7 @@ input[type="checkbox"].visually-hidden {
   z-index: 1;
   fill: var(--middle-grey);
   border: none;
+  background-color: transparent;
 }
 
 .customer__day-in--calender:hover {
@@ -819,6 +821,7 @@ input[type="checkbox"].visually-hidden {
 
   fill: var(--middle-grey);
   border: none;
+  background-color: transparent;
 }
 
 .customer__day-out--calender:hover {
@@ -861,6 +864,7 @@ input[type="checkbox"].visually-hidden {
   fill: var(--middle-grey);
   cursor: pointer;
   border: none;
+  background-color: transparent;
 }
 
 .customer__adult-minus:hover {
@@ -882,6 +886,7 @@ input[type="checkbox"].visually-hidden {
   fill: var(--middle-grey);
   cursor: pointer;
   border: none;
+  background-color: transparent;
 }
 
 .customer__adult-plus:hover {
@@ -951,6 +956,7 @@ input[type="checkbox"].visually-hidden {
   fill: var(--middle-grey);
   cursor: pointer;
   border: none;
+  background-color: transparent;
 }
 
 .customer__child-minus:hover {
@@ -972,6 +978,7 @@ input[type="checkbox"].visually-hidden {
   fill: var(--middle-grey);
   cursor: pointer;
   border: none;
+  background-color: transparent;
 }
 
 .customer__child-plus:hover {
