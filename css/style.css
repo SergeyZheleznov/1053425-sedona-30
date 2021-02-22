@@ -91,6 +91,7 @@ input[type="checkbox"].visually-hidden {
 
 /*container*/
 .container {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   background-color: var(--basic-white);
@@ -477,6 +478,7 @@ input[type="checkbox"].visually-hidden {
   margin: 0;
   padding: 0;
   background-color: var(--brown);
+  border: none;
 }
 
 .button {
@@ -490,24 +492,43 @@ input[type="checkbox"].visually-hidden {
   text-align: center;
   color: var(--basic-white);
   text-decoration: none;
+  border: none;
 }
 
   .map {
     display: block;
     width: 1200px;
-    height: 473px;
+    height: 594px;
     margin: 0;
   }
 
   .map__position {
     position: relative;
     width: auto;
-    height: 473px;
+    height: 594px;
     margin: 0;
     padding: 0;
   }
 
 /* Футер*/
+
+.footer-main {
+  position: absolute;
+  top: 2644px;
+  left: 1px;
+}
+
+.footer-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: start;
+  align-items: center;
+  width: 1200px;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.9);
+}
 
 .footer {
   display: grid;
@@ -518,6 +539,7 @@ input[type="checkbox"].visually-hidden {
   height: 120px;
   margin: 0;
   padding: 0;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .footer__contact {
@@ -1083,6 +1105,16 @@ input[type="checkbox"].visually-hidden {
   background-image: url("../img/background.jpg");
 }
 
+.filters-form {
+  width: 1200px;
+  height: 217px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .ticks {
   position: relative;
   display: flex;
@@ -1112,7 +1144,7 @@ input[type="checkbox"].visually-hidden {
 
 /*Сторона фильтров в галочками*/
 
-.filter-checked {
+.check-in {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1123,9 +1155,10 @@ input[type="checkbox"].visually-hidden {
   margin-top: 23px;
   margin-left: 60px;
   border: none;
+  outline: 1px solid red;
 }
 
-.check__title {
+.check-in__title {
   margin-bottom: 21px;
   font-weight: 700;
   font-size: 16px;
@@ -1142,6 +1175,8 @@ input[type="checkbox"].visually-hidden {
   text-transform: uppercase;
 }
 
+
+/*
 .check__input {
   position: absolute;
 }
@@ -1158,14 +1193,14 @@ input[type="checkbox"].visually-hidden {
   margin-left: -39px;
 }
 
-.check__input:checked + .check__box {
+.check__input:hover {
   background-image: url("../img/checkbox-on.svg");
 }
 
 .check__input:hover + .check__box {
   background-image: url("../img/checkbox-off.svg");
 }
-
+*/
 /*сложный фильтр*/
 
 .filter-item {
@@ -1275,37 +1310,38 @@ input[type="checkbox"].visually-hidden {
 }
 
 .range-controls .toggle {
-  position: absolute;
+  /*position: absolute;
   top: -7px;
-  left: 0;
+  left: 0;*/
   width: 4px;
   height: 4px;
   padding: 0;
   border: 9px solid #ffffff;
   background-color: #ababab;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
-  cursor: pointer;
+/*  border-radius: 50%;
+
+  box-shadow: 0 2px 0 #ababab;
+  cursor: pointer;*/
 }
 
 .range-controls .toggle-min {
-  left: 1px;
+ left: -1px;
 }
 
 .range-controls .toggle-max {
   left: 252px;
 }
 
-.range-controls .toggle-min:hover {
+.toggle-min:hover {
   border: 12px solid #ffffff;
+  top: -9px;
   left: -4px;
-  top: -10px;
 }
 
-.range-controls .toggle-max:hover {
+.toggle-max:hover {
   border: 12px solid #ffffff;
-  left: 248px;
-  top: -10px;
+  top: -9px;
+  left: 250px;
 }
 
 .price-toggle {
@@ -1365,7 +1401,7 @@ input[type="checkbox"].visually-hidden {
 .sorting__text {
   width: 80px;
   height: 20px;
-  margin-top: 30px;
+  margin-top: 31px;
   margin-left: 25px;
 
   font-size: 12px;
@@ -1384,6 +1420,7 @@ input[type="checkbox"].visually-hidden {
   justify-content: start;
 
   width: 730px;
+  margin-top: 8px;
   padding-left: 35px;
 
   list-style: none;
@@ -1395,8 +1432,9 @@ input[type="checkbox"].visually-hidden {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  color: var(--basic-black);
+  color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
+  text-decoration: none;
 
   border-bottom: 1px dotted var(--basic-black);
 }

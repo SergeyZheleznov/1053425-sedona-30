@@ -42,67 +42,70 @@
 
       </header>
 
+
       <main class="page-main">
 
         <h1 class="visually-hidden">Страница для поиска гостиницы</h1>
 
         <section class="filters filters--back">
           <h2 class="visually-hidden">Фильтр отелей</h2>
-          <form class="ticks" method="get" action="https://scho.htmlacademy.ru" target="_blank">
+          <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
+            <div class="ticks">
+              <div class="ticks__infra">
 
-            <div class="ticks__infra">
+                <fieldset class="checked-in">
+                  <legend class="check-in__title">инфраструктура:</legend>
+                  <ul>
+                    <li class="check-in-option check-checkbox">
+                      <input class="visually-hidden check-in-input-checkbox check-in-input" type="checkbox"
+                      name="pool" id="check-in-pool" checked>
+                      <label for="check-in-pool">Бассейн</label>
+                    </li>
+                  </ul>
 
-              <fieldset class="filter-checked">
-                <legend class="check__title">инфраструктура:</legend>
+                  <label class="check option">
+                    <input class="check__input visually-hidden" type="checkbox" name="name__check" value="parking">
+                    <span class="check__box"></span>
+                    Парковка
+                  </label>
 
-                <label class="check option">
-                  <input class="check__input visually-hidden" type="checkbox" name="name__check" value="pool" checked>
-                  <span class="check__box"></span>
-                  Бассейн
-                </label>
+                  <label class="check option">
+                    <input class="check__input visually-hidden" type="checkbox" name="name__check" value="wi-fi">
+                    <span class="check__box"></span>
+                    wi-fi
+                  </label>
+                </fieldset>
 
-                <label class="check option">
-                  <input class="check__input visually-hidden" type="checkbox" name="name__check" value="parking">
-                  <span class="check__box"></span>
-                  Парковка
-                </label>
+              </div>
+              <div class="ticks__type">
 
-                <label class="check option">
-                  <input class="check__input visually-hidden" type="checkbox" name="name__check" value="wi-fi">
-                  <span class="check__box"></span>
-                  wi-fi
-                </label>
-              </fieldset>
+                <fieldset class="filter-checked">
+                  <legend class="check__title">тип жилья:</legend>
 
+
+
+                  <label class="check option">
+                    <input class="check__input visually-hidden" type="checkbox" name="name__check" value="hotel" checked>
+                    <span class="check__box"></span>
+                    Гостиница
+                  </label>
+
+                  <label class="check option">
+                    <input class="check__input visually-hidden" type="checkbox" name="name__check" value="motel" checked>
+                    <span class="check__box"></span>
+                    мотель
+                  </label>
+
+                  <label class="check option">
+                    <input class="check__input visually-hidden" type="checkbox" name="name__check" value="apartment" checked>
+                    <span class="check__box"></span>
+                    апартаменты
+                  </label>
+
+                </fieldset>
+              </div>
             </div>
-            <div class="ticks__type">
 
-              <fieldset class="filter-checked">
-                <legend class="check__title">тип жилья:</legend>
-
-                <label class="check option">
-                  <input class="check__input visually-hidden" type="checkbox" name="name__check" value="hotel" checked>
-                  <span class="check__box"></span>
-                  Гостиница
-                </label>
-
-                <label class="check option">
-                  <input class="check__input visually-hidden" type="checkbox" name="name__check" value="motel" checked>
-                  <span class="check__box"></span>
-                  мотель
-                </label>
-
-                <label class="check option">
-                  <input class="check__input visually-hidden" type="checkbox" name="name__check" value="apartment" checked>
-                  <span class="check__box"></span>
-                  апартаменты
-                </label>
-
-              </fieldset>
-            </div>
-          </form>
-
-          <form method="get" action="https://echo.htmlacademy.ru" target="_blank">
             <fieldset class="filter-item">
               <legend>Стоимость в сутки (Р):</legend>
               <div class="range-filter">
@@ -118,18 +121,18 @@
 
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="width: 80%; margin-left:0%"></div>
+                    <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0" style="left:0%"></div>
-                  <div class="toggle toggle-max" tabindex="0" style="left:80%"></div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
                 </div>
 
               </div>
-             </fieldset>
+            </fieldset>
           </form>
 
           <div class="price-toggle">
-            <button class="price-button">Показать</button>
+            <button class="price-button" type="button">Показать</button>
           </div>
 
         </section>
@@ -146,14 +149,14 @@
             </ul>
             <ul class="right-sorting">
 
-              <li class="sort-current"><a class="arrow" href="#"><span class="visually-hidden">Стрелка вверх</span>
+              <li class="sort-current"><a class="arrow" href="#"><span class="visually-hidden">Сортировать по возрастанию</span>
                 <svg class="sort-current__up" version="1.1" id="Layer_12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
                 <polygon points="5.5,0 0,10 11,10 "/>
                 </svg></a>
               </li>
 
-              <li class="sort-current"><a class="arrow" href="#"><span class="visually-hidden">Стрелка вниз</span>
+              <li class="sort-current"><a class="arrow" href="#"><span class="visually-hidden">Сортировать по убыванию</span>
                 <svg class="sort-current__down" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
                 <polyline points="5.5,10 0,0 11,0 " class="polyline"/>
