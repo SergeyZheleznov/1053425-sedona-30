@@ -495,27 +495,26 @@ input[type="checkbox"].visually-hidden {
   border: none;
 }
 
-  .map {
-    display: block;
-    width: 1200px;
-    height: 594px;
-    margin: 0;
-  }
+.map {
+  display: block;
+  width: 1200px;
+  height: 594px;
+  margin: 0;
+}
 
-  .map__position {
-    position: relative;
-    width: auto;
-    height: 594px;
-    margin: 0;
-    padding: 0;
-  }
+.map__position {
+  position: relative;
+  width: auto;
+  height: 594px;
+  margin: 0;
+  padding: 0;
+}
 
 /* Футер*/
 
 .footer-main {
   position: absolute;
-  top: 2644px;
-  left: 1px;
+  bottom: 0;
 }
 
 .footer-wrap {
@@ -1133,13 +1132,17 @@ input[type="checkbox"].visually-hidden {
 }
 
 .ticks__infra {
+  width: 253px;
+  height: 216px;
   margin: 0;
+  padding: 0;
 }
 
 .ticks__type {
+  width: 299px;
+  height: 216px;
   margin: 0;
   padding: 0;
-  margin-left: 33px;
 }
 
 /*Сторона фильтров в галочками*/
@@ -1155,52 +1158,67 @@ input[type="checkbox"].visually-hidden {
   margin-top: 23px;
   margin-left: 60px;
   border: none;
-  outline: 1px solid red;
 }
 
 .check-in__title {
-  margin-bottom: 21px;
-  font-weight: 700;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 21px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-.check {
-  margin-left: 41px;
+.check-in ul {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.check-in-option {
   margin-bottom: 25px;
+}
+
+.check-in-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-
-/*
-.check__input {
-  position: absolute;
+.check-in-input-checkbox:hover + label,
+.check-in-input-checkbox:focus + label {
+  color: #ffffff;
 }
 
-.check__box {
+.check-in-input-checkbox + label::before {
+  content: "";
   position: absolute;
-
+  left: -38px;
+  top: 1px;
+  width: 27px;
+  height: 24px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
-  background-position: 0.0;
+}
 
+.check-in-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -38px;
   width: 27px;
-  height: 23px;
-  margin-left: -39px;
-}
+  height: 24px;
 
-.check__input:hover {
   background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
 }
 
-.check__input:hover + .check__box {
-  background-image: url("../img/checkbox-off.svg");
-}
-*/
 /*сложный фильтр*/
 
 .filter-item {
@@ -1310,18 +1328,19 @@ input[type="checkbox"].visually-hidden {
 }
 
 .range-controls .toggle {
-  /*position: absolute;
-  top: -7px;
-  left: 0;*/
+  position: absolute;
+  top: -9px;
+  left: 0;
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 9px solid #ffffff;
+  border: 8px solid #ffffff;
   background-color: #ababab;
-/*  border-radius: 50%;
+  box-sizing: content-box;
+  border-radius: 50%;
 
   box-shadow: 0 2px 0 #ababab;
-  cursor: pointer;*/
+  cursor: pointer;
 }
 
 .range-controls .toggle-min {
@@ -1333,14 +1352,14 @@ input[type="checkbox"].visually-hidden {
 }
 
 .toggle-min:hover {
-  border: 12px solid #ffffff;
-  top: -9px;
+  border: 10px solid #ffffff;
+  top: -12px;
   left: -4px;
 }
 
 .toggle-max:hover {
-  border: 12px solid #ffffff;
-  top: -9px;
+  border: 10px solid #ffffff;
+  top: -12px;
   left: 250px;
 }
 
@@ -1439,6 +1458,21 @@ input[type="checkbox"].visually-hidden {
   border-bottom: 1px dotted var(--basic-black);
 }
 
+li.center__type a:hover {
+  color: var(--basic-blue);
+  border-bottom: 1px dotted var(--basic-blue);
+}
+
+li.center__type a:active {
+  color: black;
+  text-decoration: none;
+  border: none;
+}
+
+li.center__type a:focus {
+  color: var(--basic-blue);
+}
+
 .center__active a {
   font-size: 12px;
   line-height: 18px;
@@ -1449,14 +1483,19 @@ input[type="checkbox"].visually-hidden {
   border: none;
 }
 
-.center__type a:hover {
+.center__active a:hover {
   color: var(--basic-blue);
+  border-bottom: 1px dotted var(--basic-blue);
 }
 
-.center__type a:active {
-  color: var(--basic-black);
+.center__active a:active {
+  color: #000000;
   text-decoration: none;
   border: none;
+}
+
+.center__active a:focus {
+  color: var(--basic-blue);
 }
 
 .right-sorting {
@@ -1682,28 +1721,52 @@ input[type="checkbox"].visually-hidden {
 }
 
 .rating {
+  position: relative;
   width: 140px;
   height: 90px;
-}
-
-.rating__list {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-end;
-  list-style: none;
 }
 
 .rating__stars {
   margin-left: 4px;
 }
 
+.rating__stars--stars::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 50px;
+  width: 90px;
+  height: 17px;
+  background-repeat: space no-repeat;
+  background-image: url("../img/star.svg");
+}
+
+.rating__stars--stars3::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 77px;
+  width: 63px;
+  height: 17px;
+  background-repeat: space no-repeat;
+  background-image: url("../img/star.svg");
+}
+
+.rating__stars--stars2::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 102px;
+  width: 39px;
+  height: 17px;
+  background-repeat: space no-repeat;
+  background-image: url("../img/star.svg");
+}
+
 .rating__numbers {
   width: 110px;
   height: 27px;
-  margin-top: 41px;
+  margin-top: 64px;
   margin-left: 30px;
   padding-left: 15px;
   background-color: var(--grey);

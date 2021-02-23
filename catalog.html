@@ -53,7 +53,7 @@
             <div class="ticks">
               <div class="ticks__infra">
 
-                <fieldset class="checked-in">
+                <fieldset class="check-in">
                   <legend class="check-in__title">инфраструктура:</legend>
                   <ul>
                     <li class="check-in-option check-checkbox">
@@ -61,47 +61,40 @@
                       name="pool" id="check-in-pool" checked>
                       <label for="check-in-pool">Бассейн</label>
                     </li>
+                    <li class="check-in-option check-checkbox">
+                      <input class="visually-hidden check-in-input-checkbox check-in-input" type="checkbox"
+                      name="parking" id="check-in-parking">
+                      <label for="check-in-parking">Парковка</label>
+                    </li>
+                    <li class="check-in-option check-checkbox">
+                      <input class="visually-hidden check-in-input-checkbox check-in-input" type="checkbox"
+                      name="wi-fi" id="check-in-wi-fi">
+                      <label for="check-in-wi-fi">Wi-fi</label>
+                    </li>
                   </ul>
-
-                  <label class="check option">
-                    <input class="check__input visually-hidden" type="checkbox" name="name__check" value="parking">
-                    <span class="check__box"></span>
-                    Парковка
-                  </label>
-
-                  <label class="check option">
-                    <input class="check__input visually-hidden" type="checkbox" name="name__check" value="wi-fi">
-                    <span class="check__box"></span>
-                    wi-fi
-                  </label>
                 </fieldset>
-
               </div>
               <div class="ticks__type">
 
-                <fieldset class="filter-checked">
-                  <legend class="check__title">тип жилья:</legend>
-
-
-
-                  <label class="check option">
-                    <input class="check__input visually-hidden" type="checkbox" name="name__check" value="hotel" checked>
-                    <span class="check__box"></span>
-                    Гостиница
-                  </label>
-
-                  <label class="check option">
-                    <input class="check__input visually-hidden" type="checkbox" name="name__check" value="motel" checked>
-                    <span class="check__box"></span>
-                    мотель
-                  </label>
-
-                  <label class="check option">
-                    <input class="check__input visually-hidden" type="checkbox" name="name__check" value="apartment" checked>
-                    <span class="check__box"></span>
-                    апартаменты
-                  </label>
-
+                <fieldset class="check-in">
+                  <legend class="check-in__title">тип жилья:</legend>
+                  <ul>
+                    <li class="check-in-option check-checkbox">
+                      <input class="visually-hidden check-in-input-checkbox check-in-input" type="checkbox"
+                      name="hotel" id="check-in-hotel" checked>
+                      <label for="check-in-hotel">гостиница</label>
+                    </li>
+                    <li class="check-in-option check-checkbox">
+                      <input class="visually-hidden check-in-input-checkbox check-in-input" type="checkbox"
+                      name="motel" id="check-in-motel" checked>
+                      <label for="check-in-motel">мотель</label>
+                    </li>
+                    <li class="check-in-option check-checkbox">
+                      <input class="visually-hidden check-in-input-checkbox check-in-input" type="checkbox"
+                      name="appartment" id="check-in-appartment" checked>
+                      <label for="check-in-appartment">апартаменты</label>
+                    </li>
+                  </ul>
                 </fieldset>
               </div>
             </div>
@@ -183,28 +176,9 @@
               </div>
 
               <div class="rating">
-                <ul class="rating__list">
-                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                    </svg>
-                  </li>
-                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                    </svg>
-                  </li>
-                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                    </svg>
-                  </li>
-                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                    </svg>
-                  </li>
-                </ul>
+                <div class="rating__stars rating__stars--stars">
+                  <span class="visually-hidden">Уровень отеля четыре звезды</span>
+                </div>
                 <div class="rating__numbers">
                   <p class="rating__text">Рейтинг: 8,5</p>
                 </div>
@@ -228,23 +202,9 @@
               </div>
 
               <div class="rating">
-                <ul class="rating__list">
-                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                    </svg>
-                  </li>
-                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                    </svg>
-                  </li>
-                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                    </svg>
-                  </li>
-                </ul>
+                <div class="rating__stars rating__stars--stars3">
+                  <span class="visually-hidden">Уровень отеля три звезды</span>
+                </div>
                 <div class="rating__numbers">
                   <p class="rating__text">Рейтинг: 8,9</p>
                 </div>
@@ -268,18 +228,9 @@
               </div>
 
               <div class="rating">
-                <ul class="rating__list">
-                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                    </svg>
-                  </li>
-                  <li class="rating__stars"><span class="visually-hidden">Звезда</span>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                    </svg>
-                  </li>
-                </ul>
+                <div class="rating__stars rating__stars--stars2">
+                  <span class="visually-hidden">Уровень отеля три звезды</span>
+                </div>
                 <div class="rating__numbers">
                   <p class="rating__text">Рейтинг: 9,2</p>
                 </div>
