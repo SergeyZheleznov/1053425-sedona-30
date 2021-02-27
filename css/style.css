@@ -696,6 +696,15 @@ input[type="checkbox"].visually-hidden {
   background-color: var(--basic-white);
 }
 
+.module-close {
+  display: none;
+}
+
+.module-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
 .customer {
   position: relative;
   display: flex;
@@ -1207,18 +1216,6 @@ input[type="checkbox"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.check-in-input-checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: -38px;
-  width: 27px;
-  height: 24px;
-
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-}
-
 /*сложный фильтр*/
 
 .filter-item {
@@ -1458,19 +1455,19 @@ input[type="checkbox"].visually-hidden {
   border-bottom: 1px dotted var(--basic-black);
 }
 
-li.center__type a:hover {
+.center__type a:hover {
   color: var(--basic-blue);
   border-bottom: 1px dotted var(--basic-blue);
 }
 
-li.center__type a:active {
+.center__type a:focus {
+  color: var(--basic-blue);
+}
+
+.center__type a:active {
   color: black;
   text-decoration: none;
   border: none;
-}
-
-li.center__type a:focus {
-  color: var(--basic-blue);
 }
 
 .center__active a {
@@ -1488,14 +1485,14 @@ li.center__type a:focus {
   border-bottom: 1px dotted var(--basic-blue);
 }
 
+.center__active a:focus {
+  color: var(--basic-blue);
+}
+
 .center__active a:active {
   color: #000000;
   text-decoration: none;
   border: none;
-}
-
-.center__active a:focus {
-  color: var(--basic-blue);
 }
 
 .right-sorting {
@@ -1779,4 +1776,24 @@ li.center__type a:focus {
   color: var(--basic-black);
   align-items: center;
   text-transform: uppercase;
+}
+
+/*Анимация*/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
