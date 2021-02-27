@@ -49,7 +49,7 @@
 
         <section class="filters filters--back">
           <h2 class="visually-hidden">Фильтр отелей</h2>
-          <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
+          <form class="filters-form" action="https://echo.htmlacademy.ru" method="POST" >
             <div class="ticks">
               <div class="ticks__infra">
 
@@ -122,12 +122,11 @@
 
               </div>
             </fieldset>
+
+            <div class="price-toggle">
+              <input type="submit" class="price-button" value="Показать">
+            </div>
           </form>
-
-          <div class="price-toggle">
-            <button class="price-button" type="button">Показать</button>
-          </div>
-
         </section>
 
         <section class="results">

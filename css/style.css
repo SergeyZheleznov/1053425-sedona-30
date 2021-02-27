@@ -1216,6 +1216,17 @@ input[type="checkbox"].visually-hidden {
   background-repeat: no-repeat;
 }
 
+.check-in-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: 1px;
+  width: 27px;
+  height: 24px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
 /*сложный фильтр*/
 
 .filter-item {
