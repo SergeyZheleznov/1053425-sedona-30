@@ -1227,6 +1227,14 @@ input[type="checkbox"].visually-hidden {
   background-repeat: no-repeat;
 }
 
+.check-in-input-checkbox:disabled + label::before {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.check-in-input-checkbox:disabled:checked + label::before {
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
+
 /*сложный фильтр*/
 
 .filter-item {
